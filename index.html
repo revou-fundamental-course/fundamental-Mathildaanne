@@ -1,9 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
     <head>
-        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Portofolio Mathilda</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        
+        <header class="nav-container">
+            <img src="images/dessertLogo.jpg" class="logo-icon">
+            <h1>Tilda's Sweet</h1>
+            <nav>
+                <a>Home</a>
+                <a href="#ourprofile">Our Profile</a>
+                <a href="portofolio">Portofolio</a>
+                <a href="messageus">Message Us</a>
+            </nav>
+
+            
+        </header>
+        <hr />
+
+        <main>
+            <!--ini Home content-->
+            <section class="home-page">
+                <header>
+                    <h1>Welcome to Tilda's Sweet Shop!</h1>
+                    <p>
+                        Our passion for baking and dedication to quality ensures that every bite is a delightful experience.<br> 
+                        Whether you are here for a birthday celebration, a wedding, or just to satisfy your sweet tooth, <br>
+                        we promise to make your visit special. Thank you for choosing us to be a part of your joyous moments. <br>
+                        Enjoy exploring our delicious creations!
+                     </p>
+                </header>
+                <article>
+                    <div>
+                        <div class="banner-container">
+                            <img class="banner-item" src="images/1.png">
+                            <img class="banner-item" src="images/2.png">
+                            <img class="banner-item" src="images/3.png">
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <hr />
+
+            <!--ini Our Profile-->
+            <section id="ourprofile">
+                <header>
+                    <h1>Our Profile</h1>
+                </header>
+                <article class="profile-content">
+                    <div class="profile-item">
+                        <div class="profile-icon profile-1"></div>
+                        <p>Profile 1</p>
+                    </div>
+
+                    <div class="profile-item">
+                        <div class="profile-icon profile-2"></div>
+                        <p>Profile 2</p>
+                    </div>
+
+                    <div class="profile-item">
+                        <div class="profile-icon profile-3"></div>
+                        <p>Profile 3</p>
+                    </div>
+                </article>
+            </section>
+
+            <hr />
+            <!--ini Portofolio-->
+            <section id="portofolio">
+                <header>
+                    <h1>Portofolio</h1>
+                </header>
+            </section>
+
+            <hr />
+            <!--ini Message Us-->
+            <section id="messageus">
+                <header>
+                    <h1>Message Us</h1>
+                </header>
+                <div class="form-container">
+                    <div class="input-container">
+                        <form name="message-form" onsubmit="return validateForm()" class="message-form">
+                            <table>
+                                <tr>
+                                    <td><label for="name">Nama :</label></td>
+                                    <td><input type="text" id="name" placeholder="Nama" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="birth">Tanggal Lahir :</label></td>
+                                    <td><input type="date" id="birth" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="gender">Jenis Kelamin :</label></td>
+                                    <td><input type="radio" id="gender" value="lelaki" required></td>
+                                    <td><label for="lelaki">Laki Laki</label></td>
+                                    <td><input type="radio" id="gender" value="perempuan" required></td>
+                                    <td><label for="perempuan">Perempuan</label></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="message">Pesan :</label></td>
+                                    <td><textarea placeholder="Pesan" id="message" required></textarea></td>
+                                </tr>
+                            </table>
+                            <button type="button" onclick="showSlide (1)">Submit</button>
+                        </form>
+                    </div>
+                    <div class="output-container" id="output">
+                        <p id="currentTime"></p>
+                        <p id="outputName"></p>
+                        <p id="outputTanggalLahir"></p>
+                        <p id="outputKelamin"></p>
+                        <p id="outputPesan"></p>
+                    </div>
+                </div>  
+            </section>
+        </main>
+        <script src="js/script.js"></script>
     </body>
+
 </html>
