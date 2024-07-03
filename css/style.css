@@ -1,0 +1,144 @@
+body {
+    background-color: #FA8072;
+    color: white;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+main {
+    padding: 32px;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+nav>a {
+    padding: 25px 32px;
+    background-color: #FAFAD2;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+nav>a:hover {
+    background-color: #8B0000;
+    color: white;
+  }
+
+.home-page {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type:x-mandatory;
+    scroll-behavior: smooth;
+    border-radius: 5px;
+    height: 350px;
+    border: 1px solid
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+    opacity: 0.3;
+    transition: opacity ease 250ms;
+}
+
+.banner-item {
+    width: 600px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.profile-content {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+
+.profile-item {
+    text align: center;
+}
+
+.profile-icon {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    border-radius: 100px;
+}
+
+.label-form {
+    width: 32px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.output-container {
+    padding: 50px;
+    border: 2px, solid;
+    width: 400px;
+}
+
+.input {
+    margin-bottom: 10px;
+    width: 300px;
+    height: 30px;
+    border: 1px, solid;
+    border-radius: 5px;
+}
+
+#message {
+    height: 100px;
+    width: 300px;
+}
+.submit {
+    width: 500px;
+    height: 40px;
+}
+
+@media only screen and (max-width: 520px) {
+    .nav-container {
+        flex-direction: column;
+    }
+}
+
